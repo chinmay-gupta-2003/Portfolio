@@ -4,25 +4,26 @@
     <title>Glassmorphism - Portfolio Website</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home-section.css" />
     <link rel="stylesheet" href="css/about-section.css" />
-    <link rel="stylesheet" href="css/project-section.css" />
+    <link rel="stylesheet" href="css/portfolio-section.css" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer type="module" src="js/typed.js"></script>
+    <script defer type="module" src="js/script.js"></script>
   </head>
   <body>
-    <!-- Main Start -->
-
     <div class="main">
-      <!-- Home Section Start -->
-
       <section class="home-section align-items-center hidden">
         <div class="container">
           <div class="row align-items-center">
             <div class="home-text">
               <p>Hello, I'm</p>
               <h1>chinmay gupta</h1>
-              <h2>fullstack web developer</h2>
+              <h2>A <span id="typing-animation"></span></h2>
               <a href="#" class="btn">more about me</a>
               <a href="#" class="btn">portfolio</a>
             </div>
@@ -34,10 +35,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Home Section End -->
-
-      <!-- About Section Start -->
 
       <section class="about-section sec-padding hidden">
         <div class="container">
@@ -165,15 +162,36 @@
         </div>
       </section>
 
-      <!-- About Section End -->
-
-      <!-- Portfolio Section Start -->
-
-      <section class="portfolio-section"></section>
-
-      <!-- Portfolio Section End -->
+      <section class="portfolio-section sec-padding">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>recent work</h2>
+            </div>
+          </div>
+          <div class="row project-container"></div>
+          <div class="mt-2 row align-items-center justify-items-center">
+            <button type="button" class="btn">view all projects</button>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script type="module" src="js/script.js"></script>
+    <div class="portfolio-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button class="btn pp-close"><i class="fas fa-times"></i></button>
+            <div class="pp-thumbnail">
+              <img src="" alt="" />
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Item Details Popup End-->
   </body>
 </html>
