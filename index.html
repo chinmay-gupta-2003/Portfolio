@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/background-circles.css" />
     <link rel="stylesheet" href="css/home-section.css" />
     <link rel="stylesheet" href="css/about-section.css" />
     <link rel="stylesheet" href="css/portfolio-section.css" />
@@ -18,6 +20,13 @@
   </head>
 
   <body>
+    <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
+
     <header></header>
 
     <main class="main">
@@ -65,15 +74,48 @@
               </p>
               <h3>skills</h3>
               <div class="skills">
-                <div class="skill-item">hTML</div>
-                <div class="skill-item">cSS</div>
-                <div class="skill-item">javaScript</div>
-                <div class="skill-item">reactJS</div>
-                <div class="skill-item">nodeJS</div>
-                <div class="skill-item">express</div>
-                <div class="skill-item">mongoDB</div>
-                <div class="skill-item">c++</div>
-                <div class="skill-item">c</div>
+                <div class="row">
+                  <div class="skill-item">
+                    javaScript
+                    <div class="skill-item-progress" data-progress="90%"></div>
+                  </div>
+                  <div class="skill-item">
+                    c++
+                    <div class="skill-item-progress" data-progress="70%"></div>
+                  </div>
+                  <div class="skill-item">
+                    c
+                    <div class="skill-item-progress" data-progress="70%"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="skill-item">
+                    hTML
+                    <div class="skill-item-progress" data-progress="90%"></div>
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-item-progress" data-progress="90%"></div>
+                    cSS
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-item-progress" data-progress="70%"></div>
+                    reactJS
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="skill-item">
+                    <div class="skill-item-progress" data-progress="80%"></div>
+                    nodeJS
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-item-progress" data-progress="80%"></div>
+                    express
+                  </div>
+                  <div class="skill-item">
+                    <div class="skill-item-progress" data-progress="80%"></div>
+                    mongoDB
+                  </div>
+                </div>
               </div>
 
               <div class="about-tabs">

@@ -33,5 +33,3 @@ export const projectMarkup = arr.map(
           </div>
       </div>`
 );
-
-console.log(projectMarkup);
