@@ -13,13 +13,26 @@
     <link rel="stylesheet" href="css/about-section.css" />
     <link rel="stylesheet" href="css/portfolio-section.css" />
     <link rel="stylesheet" href="css/contact-section.css" />
+    <link rel="stylesheet" href="css/cursor.css" />
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    ></script>
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script defer type="module" src="js/typed.js"></script>
+
+    <script defer src="js/typed.js"></script>
+    <script defer src="js/cursor.js"></script>
+
+    <script defer src="js/homeSection.js"></script>
     <script defer type="module" src="js/script.js"></script>
   </head>
 
   <body>
+    <div style="isolation: isolate">
+      <div class="cursor"></div>
+    </div>
+
     <div class="bg-circles">
       <div class="circle-1"></div>
       <div class="circle-2"></div>
@@ -35,8 +48,25 @@
           <div class="row align-items-center">
             <div class="home-text">
               <p>Hello, I'm</p>
-              <h1>chinmay gupta</h1>
+              <br />
+              <h1 class="grow-large">
+                <span>C</span>
+                <span>h</span>
+                <span>i</span>
+                <span>n</span>
+                <span>m</span>
+                <span>a</span>
+                <span>y</span>
+                <span>&nbsp;</span>
+                <span>G</span>
+                <span>u</span>
+                <span>p</span>
+                <span>t</span>
+                <span>a</span>
+              </h1>
+              <br />
               <h2>A <span id="typing-animation"></span></h2>
+              <br />
               <a href="#" class="btn">more about me</a>
               <a href="#" class="btn">portfolio</a>
             </div>
@@ -49,11 +79,11 @@
         </div>
       </section>
 
-      <section class="about-section sec-padding hidden">
+      <section class="about-section sec-padding">
         <div class="container">
           <div class="row">
             <div class="section-title">
-              <h2>about me</h2>
+              <h2 class="grow-large">about me</h2>
             </div>
           </div>
           <div class="row">
@@ -72,7 +102,7 @@
                 suscipit. Minus dolorum, adipisci ducimus voluptatum dolore et
                 repellendus ea quasi hic! Incidunt quas distinctio officiis.
               </p>
-              <h3>skills</h3>
+              <h3 class="grow-large">skills</h3>
               <div class="skills">
                 <div class="row">
                   <div class="skill-item">
@@ -208,11 +238,11 @@
         </div>
       </section>
 
-      <section class="portfolio-section sec-padding hidden">
+      <section class="portfolio-section sec-padding">
         <div class="container">
           <div class="row">
             <div class="section-title">
-              <h2>recent work</h2>
+              <h2 class="grow-large">recent work</h2>
             </div>
           </div>
           <div class="row project-container"></div>
@@ -222,11 +252,11 @@
         </div>
       </section>
 
-      <section class="contact-section sec-padding hidden">
+      <section class="contact-section sec-padding">
         <div class="container">
           <div class="row">
             <div class="section-title">
-              <h2>contact me</h2>
+              <h2 class="grow-large">contact me</h2>
             </div>
           </div>
           <div class="row">

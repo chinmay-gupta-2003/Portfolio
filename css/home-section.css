@@ -14,9 +14,18 @@
   font-weight: 400;
 }
 
-.home-text h1 {
+.home-section h1 span {
   font-size: 50px;
-  text-transform: capitalize;
+  transition: all 0.4s ease-out 0s;
+}
+
+.home-section h1 span:not(:first-child) {
+  margin-left: -5.8px;
+}
+
+.home-section h1 span:hover {
+  display: inline-block;
+  transform: scale(1.1) translateY(-6px) rotate(4deg);
 }
 
 .home-text h2 {
