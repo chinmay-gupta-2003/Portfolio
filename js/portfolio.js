@@ -33,3 +33,28 @@ export const projectMarkup = arr.map(
           </div>
       </div>`
 );
+
+export const togglePortfolioPopup = (main, portfolioPopup) => {
+  main.classList.toggle('fade-out');
+  portfolioPopup.classList.toggle('open');
+  document.body.classList.toggle('hide-scrolling');
+};
+
+export const portfolioPopupDetails = (
+  portfolioItem,
+  portfolioPopupImage,
+  portfolioPopupHeader,
+  portfolioPopupBody
+) => {
+  portfolioPopupImage.src = portfolioItem.querySelector(
+    '.portfolio-item-thumbnail img'
+  ).src;
+
+  portfolioPopupHeader.innerHTML = portfolioItem.querySelector(
+    '.portfolio-item-title'
+  ).innerHTML;
+
+  portfolioPopupBody.innerHTML = portfolioItem.querySelector(
+    '.portfolio-item-details'
+  ).innerHTML;
+};
