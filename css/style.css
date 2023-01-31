@@ -81,6 +81,7 @@ a {
 h1,
 h2 {
   font-weight: 600;
+  display: inline-block;
 }
 
 h3,
