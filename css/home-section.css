@@ -16,7 +16,7 @@
 
 .home-section h1 span {
   font-size: 50px;
-  transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out;
 }
 
 .home-section h1 span:not(:first-child) {
