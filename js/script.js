@@ -2,6 +2,43 @@ import { projectMarkup } from './portfolio.js';
 import { toggleAboutTabs } from './about.js';
 import { togglePortfolioPopup } from './portfolio.js';
 import { portfolioPopupDetails } from './portfolio.js';
+import { hideSection, toggleNavbar } from './header.js';
+
+const navToggler = document.querySelector('.nav-toggler');
+const header = document.querySelector('.header');
+
+navToggler.addEventListener('click', () => {
+  const activeSection = document.querySelector('section.active');
+
+  hideSection(activeSection);
+  toggleNavbar(header);
+  document.body.classList.toggle('hide-scrolling');
+});
+
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('link-item') && e.target.hash !== '') {
+    document.querySelector('.overlay').classList.add('active');
+    navToggler.classList.add('hide');
+
+    const goToSection = document.querySelector(e.target.hash);
+    const activeSection = document.querySelector('section.active');
+
+    if (e.target.classList.contains('nav-item')) toggleNavbar(header);
+    else {
+      hideSection(activeSection);
+      document.body.classList.add('hide-scrolling');
+    }
+
+    setTimeout(() => {
+      activeSection.classList.remove('active', 'fade-out');
+      goToSection.classList.add('active');
+      window.scrollTo(0, 0);
+      document.body.classList.remove('hide-scrolling');
+      navToggler.classList.remove('hide');
+      document.querySelector('.overlay').classList.remove('active');
+    }, 400);
+  }
+});
 
 const main = document.querySelector('.main');
 const aboutSection = document.querySelector('.about-section');

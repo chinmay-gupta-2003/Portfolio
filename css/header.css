@@ -7,6 +7,17 @@
   width: 100%;
 }
 
+.header.active {
+  position: fixed;
+  top: 35px;
+  padding: 20px 15px;
+}
+
+.header.active .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .header .nav-toggler {
   width: 50px;
   height: 50px;
@@ -20,6 +31,13 @@
   align-items: center;
   margin: 0 15px;
   z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.header .nav-toggler.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: none;
 }
 
 .header .nav-toggler span {
@@ -27,6 +45,11 @@
   width: 24px;
   background-color: var(--main-color);
   position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.header.active .nav-toggler span {
+  background-color: transparent;
 }
 
 .header .nav-toggler span::before,
@@ -45,13 +68,21 @@
   transform: translateY(-8px);
 }
 
+.header.active .nav-toggler span::before {
+  transform: rotate(45deg);
+}
+
 .header .nav-toggler span::after {
   right: 0;
   transform: translateY(8px);
 }
 
-.header .nav-toggler:hover span::before,
-.header .nav-toggler:hover span::after {
+.header.active .nav-toggler span::after {
+  transform: rotate(-45deg);
+}
+
+.header:not(.active) .nav-toggler:hover span::before,
+.header:not(.active) .nav-toggler:hover span::after {
   width: 50%;
 }
 
@@ -66,6 +97,10 @@
   visibility: hidden;
 }
 
+.header.active .nav {
+  visibility: visible;
+}
+
 .header .nav-inner {
   min-height: calc(100vh - 70px);
   max-width: 1200px;
@@ -78,6 +113,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.header.active .nav-inner {
+  opacity: 1;
+}
+
+.header.active .nav-inner ul {
+  animation: move-to-right 0.7s ease-out 0.3s backwards;
 }
 
 .header .nav-inner ul li {

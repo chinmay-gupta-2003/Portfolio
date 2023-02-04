@@ -112,6 +112,11 @@ section {
 
 section.active {
   display: block;
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+section.fade-out {
+  animation: fadeOut 0.4s ease-in-out forwards;
 }
 
 .main {
@@ -227,4 +232,19 @@ button {
 
 .btn:hover {
   color: var(--white);
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.overlay.active {
+  visibility: visible;
 }

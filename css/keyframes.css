@@ -26,3 +26,44 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes move-to-right {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
