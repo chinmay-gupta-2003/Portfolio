@@ -53,7 +53,7 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
-  padding: 5vh 15px;
+  padding: 35px 15px;
   color: var(--default-text);
   cursor: none;
 }
@@ -104,9 +104,14 @@ img {
 section {
   background-color: var(--white-alpha-25);
   border: 1px solid var(--white-alpha-40);
-  min-height: 90vh;
+  min-height: calc(100vh - 70px);
   border-radius: 30px;
   backdrop-filter: var(--backdrop-filter-blur);
+  display: none;
+}
+
+section.active {
+  display: block;
 }
 
 .main {

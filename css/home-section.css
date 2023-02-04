@@ -1,6 +1,9 @@
 .home-section {
-  display: flex;
   padding: 120px 0;
+}
+
+.home-section.active {
+  display: flex;
 }
 
 .home-text,
