@@ -3,6 +3,7 @@ import { toggleAboutTabs } from './about.js';
 import { togglePortfolioPopup } from './portfolio.js';
 import { portfolioPopupDetails } from './portfolio.js';
 import { hideSection, toggleNavbar, toggleSections } from './header.js';
+import { skillsMarkup, skillsProgressDisplay } from './skills.js';
 
 // ------- Header ------- //
 
@@ -51,9 +52,8 @@ document.addEventListener('click', (e) => {
 
 // ------- Skills ------- //
 
+skillsMarkup();
+
 const skills = document.querySelectorAll('.skill-item-progress');
 
-skills.forEach((skill) => {
-  const skillProgress = skill.dataset.progress;
-  if (skillProgress) skill.style.width = skillProgress;
-});
+skills.forEach(skillsProgressDisplay);
