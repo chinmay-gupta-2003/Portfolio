@@ -5,6 +5,17 @@ import { portfolioPopupDetails } from './portfolio.js';
 import { hideSection, toggleNavbar, toggleSections } from './header.js';
 import { skillsMarkup, skillsProgressDisplay } from './skills.js';
 
+// ------- Loader ------- //
+const main = document.querySelector('.main');
+const homeSection = document.querySelector('.home-section');
+const loader = document.querySelector('.page-loader');
+
+window.addEventListener('load', () => {
+  main.classList.remove('hidden');
+  homeSection.classList.add('active');
+  loader.classList.add('fade-out');
+});
+
 // ------- Header ------- //
 
 const navToggler = document.querySelector('.nav-toggler');
