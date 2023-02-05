@@ -4,7 +4,7 @@ export const projectMarkup = projectData.map(
   (project) =>
     `<div class="portfolio-item">
           <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/1.jpg" alt="" />
+            <img src="img/portfolio/1.png" alt="" />
           </div>
           <h3 class="portfolio-item-title">${project.name}</h3>
           <button type="button" class="btn view-project-btn">
