@@ -34,18 +34,20 @@ export const projectMarkup = arr.map(
       </div>`
 );
 
-export const togglePortfolioPopup = (main, portfolioPopup) => {
+export const togglePortfolioPopup = () => {
+  const main = document.querySelector('.main');
+  const portfolioPopup = document.querySelector('.portfolio-popup');
+
   main.classList.toggle('fade-out');
   portfolioPopup.classList.toggle('open');
   document.body.classList.toggle('hide-scrolling');
 };
 
-export const portfolioPopupDetails = (
-  portfolioItem,
-  portfolioPopupImage,
-  portfolioPopupHeader,
-  portfolioPopupBody
-) => {
+export const portfolioPopupDetails = (portfolioItem) => {
+  const portfolioPopupImage = document.querySelector('.pp-thumbnail img');
+  const portfolioPopupHeader = document.querySelector('.pp-header h3');
+  const portfolioPopupBody = document.querySelector('.pp-body');
+
   portfolioPopupImage.src = portfolioItem.querySelector(
     '.portfolio-item-thumbnail img'
   ).src;
