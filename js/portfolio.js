@@ -1,12 +1,12 @@
-const arr = [0, 0, 0, 0];
+import { projectData } from '../dev-data/projectsData.js';
 
-export const projectMarkup = arr.map(
-  (el) =>
+export const projectMarkup = projectData.map(
+  (project) =>
     `<div class="portfolio-item">
           <div class="portfolio-item-thumbnail">
             <img src="img/portfolio/1.jpg" alt="" />
           </div>
-          <h3 class="portfolio-item-title">my website 2</h3>
+          <h3 class="portfolio-item-title">${project.name}</h3>
           <button type="button" class="btn view-project-btn">
             view project
           </button>
