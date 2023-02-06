@@ -1,7 +1,7 @@
 export const projectData = [
-  { name: 'project1' },
-  { name: 'project2' },
-  { name: 'project3' },
+  { name: 'Natours' },
+  { name: 'Techomia' },
+  { name: 'FeastFood' },
   { name: 'project4' },
   { name: 'project5' },
   { name: 'project6' },
