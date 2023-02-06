@@ -64,4 +64,8 @@ export const skillDataTools = [
     name: 'leaflet',
     progress: '80%',
   },
+  {
+    name: 'stripe',
+    progress: '80%',
+  },
 ];
