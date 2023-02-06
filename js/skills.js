@@ -2,6 +2,7 @@ import {
   skillDataBackend,
   skillDataFrontend,
   skillDataLanguage,
+  skillDataTools,
 } from '../dev-data/skillData.js';
 
 export const skillsMarkup = () => {
@@ -42,6 +43,19 @@ export const skillsMarkup = () => {
   const skillItemBackend = document.querySelector('.skill-item-backend');
   skillItemBackend.innerHTML = markupBackend;
 };
+
+//
+
+const markupTools = skillDataTools
+  .map(
+    (skill) => `<div class="skill-item">${skill.name}
+                  <div class="skill-item-progress" data-progress="${skill.progress}"></div>
+                </div>`
+  )
+  .join('');
+
+const skillItemTools = document.querySelector('.skill-item-tools');
+skillItemTools.innerHTML = markupTools;
 
 export const skillsProgressDisplay = (skill) => {
   const skillProgress = skill.dataset.progress;

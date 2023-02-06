@@ -19,6 +19,10 @@ export const skillDataFrontend = [
     progress: '90%',
   },
   {
+    name: 'pug',
+    progress: '90%',
+  },
+  {
     name: 'cSS',
     progress: '90%',
   },
@@ -39,6 +43,25 @@ export const skillDataBackend = [
   },
   {
     name: 'mongoDB',
+    progress: '80%',
+  },
+  {
+    name: 'mongoose',
+    progress: '80%',
+  },
+];
+
+export const skillDataTools = [
+  {
+    name: 'git',
+    progress: '80%',
+  },
+  {
+    name: 'github',
+    progress: '80%',
+  },
+  {
+    name: 'leaflet',
     progress: '80%',
   },
 ];
