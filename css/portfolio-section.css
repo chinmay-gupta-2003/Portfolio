@@ -102,6 +102,11 @@
   line-height: 1.4;
 }
 
+.pp-body .description li {
+  list-style: inside !important;
+  margin-bottom: 6px;
+}
+
 .pp-body .general-info li {
   margin-bottom: 10px;
   font-weight: 500;
@@ -113,6 +118,13 @@
 }
 
 .pp-body .general-info li a {
-  text-transform: lowercase;
+  color: var(--main-color);
+}
+
+.pp-body .general-info li a:hover {
+  text-decoration: underline !important;
+}
+
+li::marker {
   color: var(--main-color);
 }

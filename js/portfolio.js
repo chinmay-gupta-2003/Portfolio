@@ -4,7 +4,7 @@ export const projectMarkup = projectData.map(
   (project) =>
     `<div class="portfolio-item">
           <div class="portfolio-item-thumbnail">
-            <img src="img/portfolio/1.png" alt="" />
+            <img src=${project.image} alt="" />
           </div>
           <h3 class="portfolio-item-title">${project.name}</h3>
           <button type="button" class="btn view-project-btn">
@@ -13,22 +13,22 @@ export const projectMarkup = projectData.map(
           <div class="portfolio-item-details">
             <div class="description">
               <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                ${project.description}
               </ul>
             </div>
             <div class="general-info">
               <ul>
-                <li>Created - <span>1 jan 2001</span></li>
-                <li>technologies used - <span>html,css </span></li>
-                <li>role - <span>frontend</span></li>
+                <li>Created - <span>${project.createdAt}</span></li>
+                <li>technologies used - <span>${project.technologies} </span></li>
+                <li>role - <span>${project.role}</span></li>
                 <li>
                   view live -
-                  <span><a href="#" target="_blank">domain.com</a></span>
+                  <span><a href="${project.link}" target="_blank">Link</a></span>
                 </li>
               </ul>
             </div>
             <div class="mt-4 row align-items-center justify-items-center">
-              <button type="button" class="btn">get source code</button>
+              <a href="${project.sourceCode}" target='_blank' class="btn">get source code</a>
             </div>
           </div>
       </div>`

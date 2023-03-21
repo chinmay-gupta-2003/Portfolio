@@ -18,6 +18,16 @@
   }
 }
 
+@keyframes translateTop {
+  0%,
+  100% {
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);

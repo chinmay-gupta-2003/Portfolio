@@ -68,4 +68,8 @@ export const skillDataTools = [
     name: 'stripe',
     progress: '80%',
   },
+  {
+    name: 'supabase',
+    progress: '80%',
+  },
 ];
