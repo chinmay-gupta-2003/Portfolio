@@ -13,7 +13,7 @@ export const projectData = [
   },
   {
     name: 'Techomia',
-    image: 'img/portfolio/techomia.png',
+    image: 'img/portfolio/techomia.jpg',
     description:
       '<li>Created an event management app for techno-fest of college.</li> <li>Used HTML5, CSS3, JS for FrontEnd and Node.js, psql for Backend (as rest APIs). Further used, Netlify and Heroku for static and API deployment respectively</li> <li>This application helped the management team to track down and manage participation of user, making the process smooth.</li>',
     technologies:
