@@ -30,6 +30,14 @@ export const skillDataFrontend = [
     name: 'reactJS',
     progress: '80%',
   },
+  {
+    name: 'redux',
+    progress: '80%',
+  },
+  {
+    name: 'React Native',
+    progress: '80%',
+  },
 ];
 
 export const skillDataBackend = [
