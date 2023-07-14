@@ -35,7 +35,7 @@ export const projectData = [
     sourceCode: 'https://github.com/chinmay-gupta-2003/Fact-Frenzy',
   },
   {
-    name: 'Fact Frenzy',
+    name: 'My Bag - Travel Read',
     image: 'img/portfolio/mybag.png',
     description:
       '<li>A react app where user can add bag items for their trips.</li> <li>Implemented sorting, checking items and much more.</li> <li>Used ReactJS for server-side rendering.</li> <li>Created an interactive UI/UX design for best user experience.</li>',
