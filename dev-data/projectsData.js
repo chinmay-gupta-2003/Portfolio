@@ -35,6 +35,17 @@ export const projectData = [
     sourceCode: 'https://github.com/chinmay-gupta-2003/Fact-Frenzy',
   },
   {
+    name: 'Fact Frenzy',
+    image: 'img/portfolio/mybag.png',
+    description:
+      '<li>A react app where user can add bag items for their trips.</li> <li>Implemented sorting, checking items and much more.</li> <li>Used ReactJS for server-side rendering.</li> <li>Created an interactive UI/UX design for best user experience.</li>',
+    technologies: 'ReactJS, Netlify',
+    role: 'FrontEnd Developer',
+    link: 'https://my-bag-chinmay.netlify.app/',
+    createdAt: 'July 2023',
+    sourceCode: 'https://github.com/chinmay-gupta-2003/My-Bag',
+  },
+  {
     name: 'Feast Food',
     image: 'img/portfolio/feastfood.jpg',
     description:
