@@ -30,9 +30,18 @@ export const skillDataFrontend = [
     name: 'reactJS',
     progress: '80%',
   },
+
   {
     name: 'redux',
     progress: '80%',
+  },
+  {
+    name: 'Chart JS',
+    progress: '90%',
+  },
+  {
+    name: 'Story Book',
+    progress: '50%',
   },
   {
     name: 'React Native',
@@ -67,6 +76,10 @@ export const skillDataTools = [
   {
     name: 'github',
     progress: '80%',
+  },
+  {
+    name: 'figma',
+    progress: '60%',
   },
   {
     name: 'leaflet',
