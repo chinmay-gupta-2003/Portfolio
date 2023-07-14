@@ -1,4 +1,5 @@
 const roles = [
+  '<span style="color:#845ef7">SDE Intern @Clofio</span>',
   '<span style="color:#d6336c">Full Stack Developer</span>',
   '<span style="color:#fd7e14">Technical Content Writer</span>',
 ];
@@ -8,7 +9,7 @@ const options = {
   typeSpeed: 80,
   backSpeed: 60,
   loop: true,
-  cursorChar: "|",
+  cursorChar: '|',
 };
 
-let typed = new Typed("#typing-animation", options);
+let typed = new Typed('#typing-animation', options);
