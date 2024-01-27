@@ -4,11 +4,11 @@ export const skillDataLanguage = [
     progress: '90%',
   },
   {
-    name: 'c++',
+    name: 'c/c++',
     progress: '80%',
   },
   {
-    name: 'c++',
+    name: 'python',
     progress: '80%',
   },
 ];
@@ -27,14 +27,18 @@ export const skillDataFrontend = [
     progress: '90%',
   },
   {
+    name: 'tailwindCSS',
+    progress: '80%',
+  },
+  {
     name: 'reactJS',
     progress: '80%',
   },
-
   {
     name: 'redux',
     progress: '80%',
   },
+  { name: 'materialUI', progress: '90%' },
   {
     name: 'Chart JS',
     progress: '90%',
@@ -59,11 +63,19 @@ export const skillDataBackend = [
     progress: '80%',
   },
   {
+    name: 'django',
+    progress: '80%',
+  },
+  {
     name: 'mongoDB',
     progress: '80%',
   },
   {
     name: 'mongoose',
+    progress: '80%',
+  },
+  {
+    name: 'SQL',
     progress: '80%',
   },
 ];
